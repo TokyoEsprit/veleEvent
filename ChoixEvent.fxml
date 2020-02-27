@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velo.gui.ChoixEventController">
+   <children>
+      <AnchorPane layoutY="101.0" prefHeight="507.0" prefWidth="197.0" style="-fx-background-color: #40919F;">
+         <children>
+            <JFXButton layoutX="-1.0" layoutY="93.0" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #D8D2D3;" text="Event" />
+            <JFXButton fx:id="btn_home" layoutY="46.0" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #D8D2D3;" text="Home Page" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="103.0" prefWidth="913.0" style="-fx-background-color: #40919F;">
+         <children>
+            <Label fx:id="name" layoutX="711.0" layoutY="63.0" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="pn_event" layoutX="197.0" layoutY="104.0" prefHeight="507.0" prefWidth="716.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="270.0" layoutX="67.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Competition" fitHeight="249.0" fitWidth="270.0" layoutX="77.0" layoutY="109.0" onMouseClicked="#CompetitionClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/41230867-podium-the-dude-personnages-en-3d-sur-podium-tenant-trophées-.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="sortie" fitHeight="249.0" fitWidth="270.0" layoutX="427.0" layoutY="121.0" onMouseClicked="#SortieClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/ob_8ddcbc_famille-velo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="145.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competition" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <Text layoutX="522.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hangout">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="24.0" layoutY="68.0" stroke="#faf7f7" strokeType="OUTSIDE" strokeWidth="2.0" text="ROOKIE BIKE!">
+         <font>
+            <Font name="Arial Bold" size="64.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfafa" layoutX="24.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take a ride and leave your car aside">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

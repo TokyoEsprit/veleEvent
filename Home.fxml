@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.velo.gui.HomeController">
+   <children>
+      <AnchorPane layoutY="101.0" prefHeight="507.0" prefWidth="197.0" style="-fx-background-color: #40919F;">
+         <children>
+            <JFXButton fx:id="btn_event" layoutX="-1.0" layoutY="93.0" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #D8D2D3;" text="Event" />
+            <JFXButton layoutY="46.0" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #D8D2D3;" text="Home Page" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="103.0" prefWidth="913.0" style="-fx-background-color: #40919F;">
+         <children>
+            <Label fx:id="name" layoutX="711.0" layoutY="63.0" />
+            <Text layoutX="14.0" layoutY="58.0" stroke="#faf7f7" strokeType="OUTSIDE" strokeWidth="2.0" text="ROOKIE BIKE!">
+               <font>
+                  <Font name="Arial Bold" size="64.0" />
+               </font>
+            </Text>
+            <Text fill="#fcfafa" layoutX="14.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take a ride and leave your car aside">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text layoutX="303.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO ROOKIE BIKE!">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#f20606" layoutX="366.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take a ride and leave your car aside">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
